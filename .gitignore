@@ -1,3 +1,21 @@
+#Directories
+server/server/Debug
+server/server/Release
+server/server/x64
+server/server/.vs
+server/Debug
+server/Release
+server/x64
+server/.vs
+/.vs
+
+#Files
+*.vcxproj.filters
+*.vcxproj.user
+*.filters
+*.user
+*.pdb
+
 # Prerequisites
 *.d
 
