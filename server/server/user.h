@@ -1,16 +1,16 @@
 #pragma once
 #include <string>
 
-#include "types.h"
+#include "../../common/sources/types.h"
 
 class User {
 	public:
-		User( types::ID id, std::string& name );
+		User(common::ID userId, std::string& name );
 
-		types::ID getId() const;
+		common::ID getId() const;
 		std::string getName() const;
 
 	private:
-		types::ID m_id;
+		common::ID m_userId;
 		std::string m_name;
 };

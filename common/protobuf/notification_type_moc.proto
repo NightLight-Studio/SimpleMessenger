@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+message NotificationTypeMoc 
+{
+  int32 nt_type = 1;
+}

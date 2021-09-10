@@ -1,9 +1,9 @@
 #include "user.h"
 
-User::User(types::ID id, std::string& name) : m_id{ id }, m_name{ name } {}
+User::User(common::ID id, std::string& name) : m_userId{ id }, m_name{ name } {}
 
-types::ID User::getId() const {
-	return m_id;
+common::ID User::getId() const {
+	return m_userId;
 }
 
 std::string User::getName() const {

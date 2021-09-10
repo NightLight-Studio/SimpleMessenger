@@ -1,7 +1,7 @@
 #pragma once
 #include <cstdint>
 
-namespace types
+namespace common
 {
 	using ID = int64_t;
 }
