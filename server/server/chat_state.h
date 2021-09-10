@@ -4,6 +4,8 @@
 
 namespace notification {
 
+    class InfoMessage;
+
     class ChatState : public INotification
     {
     public:

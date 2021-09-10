@@ -20,8 +20,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="chat_room.cpp" />
+    <ClCompile Include="chat_state.cpp" />
+    <ClCompile Include="join_chat_room.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="user.cpp" />
+    <ClCompile Include="user_login.cpp" />
+    <ClCompile Include="user_message.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="chat_state.h" />

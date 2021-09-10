@@ -7,7 +7,7 @@ namespace notification {
     class JoinChatRoom : public INotification
     {
     public:
-        JoinChatRoom(common::ID userId, common::ID name);
+        JoinChatRoom(common::ID userId, common::ID chatRoomId);
 
         common::ID getUserId() const override;
         common::ID getChatRoomId() const;

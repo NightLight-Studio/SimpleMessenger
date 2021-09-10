@@ -34,19 +34,22 @@ class NotificationServer {
             {
                 JoinChatRoom proto;
                 proto.ParseFromString(protoString);
-                return &notification::JoinChatRoom{ proto.user_id(), proto.chat_room_id() };
+                notification::JoinChatRoom joinChatRoom{ proto.user_id(), proto.chat_room_id() };
+                return &joinChatRoom;
             }
             case common::NotificationTypes::ntUserLogin:
             {
                 UserLogin proto;
                 proto.ParseFromString(protoString);
-                return &notification::UserLogin{ proto.user_id(), proto.name() };
+                notification::UserLogin userLogin{ proto.user_id(), proto.name() };
+                return &userLogin;
             }
             case common::NotificationTypes::ntUserMessage:
             {
                 UserMessage proto;
                 proto.ParseFromString(protoString);
-                return &notification::UserMessage{ proto.user_id(), proto.message() };
+                notification::UserMessage userMessage{ proto.user_id(), proto.message() };
+                return &userMessage;
             }
             default: {
                 return nullptr;
